@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Drawing Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎨 My Drawing Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>🖍 Hi there! I’m an artist who finds joy in every sketch, scribble, and splash of creativity. Drawing is my happy place—whether it’s dreamy characters, cozy scenes, or whimsical doodles, I love bringing ideas to life one line at a time. My portfolio is a peek into my imagination, where each piece is a little love letter to the art I adore🍀💎. Thanks for stopping by—I hope my drawings make you smile as much as I smiled making them!😼✨ and contact me on ig for drawing of portraits or anime drawings @lily_artist_anime </p>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>My Artwork</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="pencil">Pencil Sketches</button>
+      <button class="filter-btn" data-category="digital">Digital Art</button>
+      <button class="filter-btn" data-category="portrait">Portraits</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery-container">
+      <!-- Pencil Sketches -->
+      <div class="gallery-item" data-category="pencil">
+        <img src="https://i.postimg.cc/T1b1g1d3/IMG-20210822-WA0004.jpg" alt="Pencil Sketch 1">
+      </div>
+      <div class="gallery-item" data-category="pencil">
+        <img src="https://i.postimg.cc/WbKqDRs3/IMG-20210903-194008.jpg" alt="Pencil Sketch 2">
+      </div>
+
+      <!-- Digital Art -->
+      <div class="gallery-item" data-category="digital">
+        <img src="https://i.postimg.cc/CLWC3nBm/IMG-20210815-WA0006.jpg" alt="Digital Art 1">
+      </div>
+      <div class="gallery-item" data-category="digital">
+        <img src="https://i.postimg.cc/jqyRHG62/1626161443911.png" alt="Digital Art 2">
+      </div>
+
+      <!-- Portraits -->
+      <div class="gallery-item" data-category="portrait">
+        <img src="https://i.postimg.cc/h46wz9zK/IMG-20240625-142404.jpg" alt="Portrait 1">
+      </div>
+      <div class="gallery-item" data-category="portrait">
+       <img src="https://i.postimg.cc/prJFHf3K/IMG-20230409-161525.jpg"" alt="Portrait 2">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div id="caption"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Drawing Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
